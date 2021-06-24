@@ -44,4 +44,4 @@ jobs:
         break_build: false
         scanners: sast
         bug_tracker: GitHubPull
-        params: --namespace=${{ github.repository_owner }} --repo-name=${{ github.event.repository.name }} --branch=${{ github.head_ref }} --merge-id=${{ github.event.number }} --checkmarx.exclude-files=*.java
+        params: --namespace=${{ github.repository_owner }} --repo-name=${{ github.event.repository.name }} --branch=${{ github.head_ref }} --merge-id=${{ github.event.number }} --checkmarx.setting-override=true
