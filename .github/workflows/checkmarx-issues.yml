@@ -40,6 +40,6 @@ jobs:
         checkmarx_client_secret: ${{ secrets.CHECKMARX_CLIENT_SECRET }}  # To be stored in GitHub Secrets.
         github_token: ${{secrets.GH_TOKEN}}  # To be stored in GitHub Secrets.
         incremental: false
-        scanners: sast
+        scanners: sast, sca
         bug_tracker: GitHub
         params: --cx-flow.zip-exclude=".github/" --namespace=${{ github.repository_owner }} --repo-name=${{ github.event.repository.name }} --branch=${{ github.ref }}
