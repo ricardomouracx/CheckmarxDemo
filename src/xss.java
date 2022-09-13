@@ -12,7 +12,7 @@ public class BookDetail_jsp extends HttpJspBase {
 
 	private static void printSanitizedName (String str) {
 
-		String sanitizedUserData = Security.validName(str);
+		//String sanitizedUserData = Security.validName(str);
 		out.println (sanitizedUserData);
 	}
 
